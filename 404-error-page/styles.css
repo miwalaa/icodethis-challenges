@@ -70,7 +70,7 @@ a {
     color: white;
 }
 
-.circle-1 {
+.bubble-1 {
     width: 300px;
     height: 300px;
     position: absolute;
@@ -81,7 +81,7 @@ a {
     transform: translate(-100%, 50%) rotate(240deg)
 }
 
-.circle-2 {
+.bubble-2 {
     width: 350px;
     height: 350px;
     position: absolute;
@@ -92,7 +92,7 @@ a {
     transform: translate(-100%, 50%) rotate(240deg);
 }
 
-.circle-3 {
+.bubble-3 {
     width: 100px;
     height: 100px;
     position: absolute;
