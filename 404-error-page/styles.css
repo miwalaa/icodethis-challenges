@@ -1,0 +1,104 @@
+/*
+ * This rule ensures that the box-sizing property is set to border-box for all elements,
+ * so that padding and border are included in the element's total width and height.
+ * It also resets margin and padding to 0 for all elements.
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+ * These rules apply to the html and body elements:
+ * - Set the height to 100% to ensure they take up the full viewport height.
+ * - Remove any default margin.
+ * - Use flexbox to center content horizontally and align it at the start vertically.
+ */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#container {
+    background: linear-gradient(to right, #F073C5, #F66FB1, #FE6B97 );
+    margin-top: 20px;
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #404863;
+    position: relative;
+    overflow: hidden;
+}
+
+#center {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 0.7rem;
+    margin-top: 80px;
+}
+
+.error-msg h2 {
+    font-size: 170px;
+}
+
+.error-msg p {
+    margin-bottom: 350px;
+}
+
+span {
+    position: relative;
+    bottom: 310px;
+}
+
+a {
+    color: white;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #F28BD0, transparent);
+    bottom: 7%;
+    right: 55%;
+    transform: translate(-100%, 50%) rotate(240deg)
+}
+
+.circle-2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #F28BD0, transparent);
+    bottom: 80%;
+    left: 110%;
+    transform: translate(-100%, 50%) rotate(240deg);
+}
+
+.circle-3 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #F28BD0, transparent 75%, transparent);
+    bottom: 50%;
+    left: 85%;
+    transform: translate(-100%, 50%) rotate(240deg);
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Setting the default setting */
+
+*, 
+*::after, 
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EFF0F3;
+    color: #242E4C;
+    font-family: "Barlow";
+}
+
+/*  */
+
+#container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#tab {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px 30px 5px 5px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+/* x close button */
+
+.close {
+    position: relative;
+    left: 165px;
+    bottom: 30px;
+    width: 2px;
+    opacity: 0.4;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close::before, .close::after {
+    position: absolute;
+    content: ' ';
+    left: 5px;
+    height: 21px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+/* Tree */
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one {
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #242E4C;
+}
+
+.two {
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+    border-bottom: 15px solid #242E4C;
+    position: relative;
+    bottom: 3px;
+}
+
+
+.three {
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    border-bottom: 18px solid #242E4C;
+    position: relative;
+    bottom: 8px;
+}
+
+
+.four {
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #242E4C;
+    position: relative;
+    bottom: 14px;
+}
+
+.five {
+    width: 8px;
+    height: 8px;
+    background-color: #242E4C;
+    position: relative;
+    bottom: 16px;
+}
+
+#tab h1 {
+    font-size: 24px;
+}
+
+
+
+#tab p {
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+#tab span {
+    color: #D28911;
+    font-weight: 500;
+    position: relative;
+    bottom: 40px;
+}
+
+#tab button {
+    width: 70%;
+    height: 60px;
+    color: white;
+    background-color: #242E4C;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
